@@ -1,20 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
-import { ClerkProvider } from '@clerk/clerk-react'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import SignInPage from './auth/sign-in/SignInPage.jsx'
+import HomePage from './home/HomePage.jsx'
+import DashBoard from './dashboard/DashBoard.jsx'
 
-// Import your publishable key
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
-if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
-}
+const router = createBrowserRouter([
+  {
+    element: <App/>,
+    children: [
+      {
+        path: '/',
+        element: <HomePage/>
+      },
+      {
+        path: '/dashboard',
+        element: <DashBoard/>
+      }
+    ]
+  },
+  {
+    path: '/auth/sign-in',
+    element: <SignInPage/>
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <App />
-    </ClerkProvider>
+  <React.StrictMode>    
+      <RouterProvider router={router}/>
   </React.StrictMode>,
 )
