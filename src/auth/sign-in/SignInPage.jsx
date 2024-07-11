@@ -1,10 +1,18 @@
-import { Container, Typography } from '@mui/material'
+import { SignIn } from '@clerk/clerk-react'
+import { Container, Box } from '@mui/material'
 import React from 'react'
 
 function SignInPage() {
   return (
     <Container>
-        <Typography variant='h1'>Bye Bye</Typography>
+      <Box 
+        display="flex" 
+        justifyContent="center" 
+        alignItems="center" 
+        minHeight="100vh"
+      >
+        <SignIn />
+      </Box>
     </Container>
   )
 }
