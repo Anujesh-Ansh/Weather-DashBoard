@@ -38,17 +38,18 @@ function HomePage() {
           <Button
             variant='contained'
             style={{
-              backgroundColor: 'antiquewhite', // Setting the background color to yellow
-              borderRadius: '50%', // Making the button circular
-              minWidth: '64px', // Ensuring the button has a minimum width
-              minHeight: '64px', // Ensuring the button has a minimum height
+              backgroundColor: 'antiquewhite',
+              borderRadius: '50%',
+              minWidth: '64px',
+              minHeight: '64px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               color:'black',
-              padding: 0, // Removing padding to better center the icon
+              padding: -70,
+              margin: -10,
             }}
-            endIcon={<ArrowForward style={{ fontSize: 30, fontWeight: 'bold', margin: 0, padding: 0 }} />} // Adjusting icon size, boldness, margin, and padding using styles prop
+            endIcon={<ArrowForward style={{ fontSize: 30, fontWeight: 'bold', margin: -10, padding: -10 }} />} // Adjusting icon size, boldness, margin, and padding using styles prop
           />
         </Link>
       </Box>
