@@ -7,13 +7,13 @@ function Footer() {
       component="footer"
       sx={{
         position: 'fixed',
-        bottom: 20,
+        bottom: 10,
         left: 0,
         width: '100%',
         overflow: 'hidden',
         py: 3,
         textAlign: 'center',
-        zIndex: 1000, // Ensure it stays above other content
+        // zIndex: 1000, // Ensure it stays above other content
       }}
     >
       <Container maxWidth="lg">
