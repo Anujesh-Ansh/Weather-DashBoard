@@ -10,7 +10,31 @@ function SevenDayTemp() {
                 7 Day Temperature
             </Typography>
 
-            <Cards/>
+            <Box
+                    display='flex'
+                    justifyContent='center'
+                    alignItems='center'
+                    
+            >
+                <Box 
+                    display='flex'
+                    justifyContent='space-evenly'
+                    alignItems='center'
+                    flexDirection='row'
+                    gap={3}
+                >
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                </Box>
+            </Box>
+            
+
+
 
         </Box>
     </Container>
