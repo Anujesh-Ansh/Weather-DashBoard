@@ -1,6 +1,10 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import TopButtons from '../components/TopButtons'
+import TimeNLocation from '../components/TimeNLocation'
+import TemperatureDetails from '../components/TemperatureDetails'
+import Chart from '../components/Chart'
 
 function DashBoard() {
   return (
@@ -12,23 +16,24 @@ function DashBoard() {
             minHeight='80vh'
             flexDirection='column'
             textAlign='center'
-            p={4}
         >
             <Box
                 display='flex'
                 alignItems='center'
-                
                 flexDirection='column'
                 bgcolor='lightblue'
                 height='60vh'
                 minWidth='40vw'
-                p={5}
+                p={10}
+                gap={3}
                 borderRadius={20}
-                style={{elevation: 5}}
-                
             >
+                    <TopButtons/>
+                    <TimeNLocation/>
+                    <TemperatureDetails/>
+                    <Chart/>
 
-                <Typography variant='h3'>Weather DashBoard</Typography>
+                
             </Box>
         </Box>
     </Container>
