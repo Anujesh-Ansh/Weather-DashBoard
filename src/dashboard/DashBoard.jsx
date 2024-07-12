@@ -32,6 +32,7 @@ function DashBoard() {
                     <TimeNLocation/>
                     <TemperatureDetails/>
                     <Chart/>
+                    
 
                 
             </Box>
