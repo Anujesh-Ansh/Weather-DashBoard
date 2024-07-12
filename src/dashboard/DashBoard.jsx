@@ -5,6 +5,7 @@ import TopButtons from '../components/TopButtons'
 import TimeNLocation from '../components/TimeNLocation'
 import TemperatureDetails from '../components/TemperatureDetails'
 import Chart from '../components/Chart'
+import SevenDayTemp from '../components/SevenDayTemp'
 
 function DashBoard() {
   return (
@@ -32,7 +33,7 @@ function DashBoard() {
                     <TimeNLocation/>
                     <TemperatureDetails/>
                     <Chart/>
-                    
+                    <SevenDayTemp/>
 
                 
             </Box>
